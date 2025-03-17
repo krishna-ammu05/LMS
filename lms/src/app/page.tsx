@@ -48,8 +48,24 @@ export default function Home() {
         </div>
       </div>
 
-      
+      {/* Features Section */}
+      <div className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-6">
+        <div className="bg-white shadow-lg p-6 rounded-lg text-center text-gray-900">
+          <div className="text-blue-500 text-5xl">🎓</div>
+          <h2 className="text-xl font-semibold mt-4">Learn From Experts</h2>
+          <p className="text-gray-600 mt-2">Unparalleled expertise from industry leaders, ensuring you receive top-tier knowledge.</p>
+        </div>
+        <div className="bg-white shadow-lg p-6 rounded-lg text-center text-gray-900">
+          <div className="text-red-500 text-5xl">🏅</div>
+          <h2 className="text-xl font-semibold mt-4">Earn a Certificate</h2>
+          <p className="text-gray-600 mt-2">Earn a prestigious certificate, validating your expertise and dedication to continuous learning.</p>
+        </div>
+        <div className="bg-white shadow-lg p-6 rounded-lg text-center text-gray-900">
+          <div className="text-green-500 text-5xl">📚</div>
+          <h2 className="text-xl font-semibold mt-4">Engaging Courses</h2>
+          <p className="text-gray-600 mt-2">Extensive courses, covering a wide array of subjects, to find the perfect learning journey just for you.</p>
+        </div>
       </div>
-    
+    </div>
   );
 }
