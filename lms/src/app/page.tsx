@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Sun, Moon } from "lucide-react";
+import homeimage from "@/app/images/home page picture.jpg"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -12,7 +13,7 @@ export default function Home() {
     <div className={darkMode ? "min-h-screen bg-gray-900 text-white" : "min-h-screen bg-white text-gray-900"}>
       {/* Navbar */}
       <nav className="flex justify-between items-center p-6 max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold">ELearning</h1>
+        <h1 className="text-3xl font-bold">NeoLearn</h1>
         <ul className="flex space-x-6">
           <li><a href="#" className="hover:text-blue-400 text-xl">Home</a></li>
           <li><a href="#" className="hover:text-blue-400 text-xl">Courses</a></li>
@@ -28,7 +29,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center p-8 max-w-6xl mx-auto md:flex-row gap-10">
         <div className="w-full md:w-1/2 flex justify-center">
-          <Image src="/hero-image.png" alt="Learning Illustration" width={500} height={500} />
+          <Image src={homeimage} alt="Learning Illustration" width={500} height={500} />
         </div>
         <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold">
